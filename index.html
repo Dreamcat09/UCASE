@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UCASE — Test File</title>
+  <meta name="description" content="Página de prueba para publicar y descargar un archivo en GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="container header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">U</div>
+      <div>
+        <div class="title">UCASE</div>
+        <div class="subtitle">GitHub Pages · archivo público</div>
+      </div>
+    </div>
+    <a class="chip" href="DUMMY.txt" target="_blank" rel="noopener">Ver DUMMY.txt</a>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div class="hero-text">
+        <h1>Publicación de archivo de prueba</h1>
+        <p>
+          Esta página sirve para verificar que <strong>DUMMY.txt</strong> está accesible públicamente por HTTP(S)
+          y se puede descargar.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="DUMMY.txt" download>Descargar DUMMY.txt</a>
+          <a class="btn ghost" href="DUMMY.txt" target="_blank" rel="noopener">Abrir en el navegador</a>
+        </div>
+
+        <div class="info">
+          <div class="info-item">
+            <div class="label">Ruta del archivo</div>
+            <code class="code">/DUMMY.txt</code>
+          </div>
+          <div class="info-item">
+            <div class="label">Tip importante</div>
+            <div class="value">Respeta mayúsculas/minúsculas (GitHub Pages es “case-sensitive”).</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-box" aria-hidden="true">
+        <div class="file">
+          <div class="file-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="file-body">
+            <div class="file-name">DUMMY.txt</div>
+            <div class="file-lines">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Checklist rápido</h2>
+      <ol class="list">
+        <li>El repo es <strong>Public</strong>.</li>
+        <li>GitHub Pages activado en la rama <strong>main</strong> y carpeta <strong>/(root)</strong>.</li>
+        <li>Accedes a <code class="code">.../DUMMY.txt</code> desde el navegador.</li>
+      </ol>
+    </section>
+
+    <footer class="footer">
+      <span>Hecho para UCASE · <span id="year"></span></span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
